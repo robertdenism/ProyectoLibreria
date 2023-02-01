@@ -22,6 +22,8 @@ public class BuscarLibros extends AppCompatActivity {
     BookSearchViewModel vm;
     LiveData<VolumesResponse>data;
 
+    int startIndex;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +46,10 @@ public class BuscarLibros extends AppCompatActivity {
         });
 
         idBuscar.setOnClickListener((v)->{
-            vm.searchVolumes(idPalabraClave.getText().toString(),idAutor.getText().toString());
+            vm.searchVolumes(
+                    idPalabraClave.getText().toString(),
+                    idAutor.getText().toString(),
+                    Integer.toString(startIndex));
         });
 
     }

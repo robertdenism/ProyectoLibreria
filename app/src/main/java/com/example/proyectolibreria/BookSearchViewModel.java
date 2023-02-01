@@ -23,8 +23,8 @@ public class BookSearchViewModel extends AndroidViewModel {
         volumesResponseLiveData = bookRepository.getVolumesResponseLiveData();
     }
 
-    public void searchVolumes(String keyword, String author) {
-        bookRepository.searchVolumes(keyword, author);
+    public void searchVolumes(String keyword, String author, String startIndex) {
+        bookRepository.searchVolumes(keyword, author, startIndex);
     }
 
     public LiveData<VolumesResponse> getVolumesResponseLiveData() {

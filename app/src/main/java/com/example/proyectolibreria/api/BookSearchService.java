@@ -10,6 +10,7 @@ public interface BookSearchService {
     @GET("/books/v1/volumes")
     Call<VolumesResponse> searchVolumes(
             @Query("q") String query,
-            @Query("inauthor") String author
+            @Query("inauthor") String author,
+            @Query("startIndex") String startIndex
     );
 }
