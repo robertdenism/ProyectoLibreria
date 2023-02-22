@@ -1,4 +1,4 @@
-package com.example.proyectolibreria;
+package com.example.proyectolibreria.libreria;
 
 import android.app.Application;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.proyectolibreria.api.BookRepository;
-import com.example.proyectolibreria.data.VolumesResponse;
+import com.example.proyectolibreria.libreria.api.BookRepository;
+import com.example.proyectolibreria.libreria.data.VolumesResponse;
 
 
 public class BookSearchViewModel extends AndroidViewModel {

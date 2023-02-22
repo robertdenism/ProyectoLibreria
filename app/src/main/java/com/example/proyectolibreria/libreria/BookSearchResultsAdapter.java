@@ -1,4 +1,4 @@
-package com.example.proyectolibreria;
+package com.example.proyectolibreria.libreria;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,15 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.proyectolibreria.data.Volume;
+import com.example.proyectolibreria.R;
+import com.example.proyectolibreria.libreria.data.Volume;
 //import com.learntodroid.mvvmrestapi.R;
 //import com.learntodroid.mvvmrestapi.models.Volume;
 //import com.learntodroid.mvvmrestapi.util.Util;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import okhttp3.internal.Util;
 
 public class BookSearchResultsAdapter extends RecyclerView.Adapter<BookSearchResultsAdapter.BookSearchResultHolder> {
     private List<Volume> results = new ArrayList<>();

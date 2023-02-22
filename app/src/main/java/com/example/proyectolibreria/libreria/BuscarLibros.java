@@ -1,4 +1,4 @@
-package com.example.proyectolibreria;
+package com.example.proyectolibreria.libreria;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
@@ -11,9 +11,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.proyectolibreria.data.Volume;
 import com.example.proyectolibreria.R;
-import com.example.proyectolibreria.data.VolumesResponse;
+import com.example.proyectolibreria.libreria.BookSearchResultsAdapter;
+import com.example.proyectolibreria.libreria.BookSearchViewModel;
+import com.example.proyectolibreria.libreria.data.VolumesResponse;
 
 public class BuscarLibros extends AppCompatActivity {
 

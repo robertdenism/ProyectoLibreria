@@ -1,4 +1,4 @@
-package com.example.proyectolibreria.data;
+package com.example.proyectolibreria.libreria.data;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

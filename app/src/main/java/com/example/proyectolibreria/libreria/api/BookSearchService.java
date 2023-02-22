@@ -1,5 +1,5 @@
-package com.example.proyectolibreria.api;
-import com.example.proyectolibreria.data.VolumesResponse;
+package com.example.proyectolibreria.libreria.api;
+import com.example.proyectolibreria.libreria.data.VolumesResponse;
 
 
 import retrofit2.Call;
@@ -13,4 +13,5 @@ public interface BookSearchService {
             @Query("inauthor") String author,
             @Query("startIndex") String startIndex
     );
+
 }
